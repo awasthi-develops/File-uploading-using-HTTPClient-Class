@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfAppLogin.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppLogin"
+        mc:Ignorable="d"
+        Title="Upload Window" Height="350" Width="525">
+    <Grid Margin="-55,-46,-40,-32" RenderTransformOrigin="0.5,0.5" Height="348" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="398*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.342"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="22,95,0,0" VerticalAlignment="Top" Width="82" Grid.Column="1" Height="26"/>
+        <Label Content="email" HorizontalAlignment="Left" Margin="22,134,0,0" VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.478,1.03" Grid.Column="1" Height="26"/>
+        <Label x:Name="filename1" Content="file url" HorizontalAlignment="Left" Margin="22,234,0,0" VerticalAlignment="Top" Width="74" Height="26" Grid.Column="1"/>
+        <TextBox x:Name="eTname" HorizontalAlignment="Left" Height="26" Margin="194,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196" Grid.Column="1"/>
+        <TextBox x:Name="eTemail" HorizontalAlignment="Left" Height="26" Margin="194,134,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196" Grid.Column="1"/>
+        <TextBox x:Name="filename" HorizontalAlignment="Left" Height="26" Margin="111,234,0,0"  Text="" VerticalAlignment="Top" Width="279" Grid.Column="1"/>
+        <Button x:Name="bTupload" Content="Upload" HorizontalAlignment="Left" Margin="208,268,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Height="22" Click="Button_ClickAsync" RenderTransformOrigin="0.526,0.229"/>
+        <Button x:Name="bTlogout" Content="Logout" HorizontalAlignment="Right" Margin="0,55,50,0" VerticalAlignment="Top" Width="65" RenderTransformOrigin="0.378,1.095" Click="Hyperlink_Click" Grid.Column="1" Height="22"/>
+        <Button x:Name="bTselect" Content="Select file" HorizontalAlignment="Left" Margin="409,234,0,0" VerticalAlignment="Top" Width="79" RenderTransformOrigin="0.608,3.336" Grid.Column="1" Height="22" Click="Button_Click_1"/>
+        <TextBox x:Name="ResponseText" Grid.Column="1" HorizontalAlignment="Left" Height="22" Margin="111,307,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="279"/>
+        <Label Content="file name(with extension)" Grid.Column="1" HorizontalAlignment="Left" Margin="22,182,0,0" VerticalAlignment="Top" Width="146" Height="25"/>
+        <TextBox x:Name="eTfilename" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="194,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" RenderTransformOrigin="0.531,0.495"/>
+
+    </Grid>
+</Window>

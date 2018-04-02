@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfAppLogin.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppLogin"
+        mc:Ignorable="d"
+        Title="Register Window" Height="350" Width="525">
+    <Grid>
+        <Label Content="Enter the following details to Register" HorizontalAlignment="Left" Margin="155,39,0,0" VerticalAlignment="Top" Width="214"/>
+        <Label Content="Enter Name" HorizontalAlignment="Left" Margin="53,99,0,0" VerticalAlignment="Top" Width="143"/>
+        <Label Content="Enter Username/e-mail" HorizontalAlignment="Left" Margin="53,146,0,0" VerticalAlignment="Top" Width="143"/>
+        <Label Content="Choose Password" HorizontalAlignment="Left" Margin="53,194,0,0" VerticalAlignment="Top" Width="143"/>
+        <TextBox x:Name="rgName" HorizontalAlignment="Left" Height="26" Margin="234,99,0,0"  Text="" VerticalAlignment="Top" Width="233"/>
+        <TextBox x:Name="rgUsername" HorizontalAlignment="Left" Height="23" Margin="234,149,0,0"  Text="" VerticalAlignment="Top" Width="233"/>
+        <PasswordBox x:Name="rgPassword" HorizontalAlignment="Left" Margin="234,194,0,0" VerticalAlignment="Top" Width="233" Height="26"/>
+        <Button Content="Click to Register" HorizontalAlignment="Left" VerticalAlignment="Top" Width="149" Margin="182,255,0,0" Click="Hyperlink_Click"/>
+
+    </Grid>
+</Window>
